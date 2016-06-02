@@ -1,4 +1,5 @@
 *.scss
 *gulpfile.js
+*.json
 node_modules/
 scss/
