@@ -1,0 +1,16 @@
+body > header{
+	width:100%;
+	background-color:$primary-one;
+	padding:0.5rem 2rem 1rem;
+
+	.title{
+		display:inline-block;
+		font-size:2.4rem;
+		letter-spacing: -0.1rem;
+		color:$primary-two;
+
+		span{
+			font-size:4.0rem;
+		}
+	}
+}
