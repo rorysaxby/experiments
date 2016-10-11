@@ -8,11 +8,15 @@ self.addEventListener('install', function(e) {
         caches.open(cacheName).then(function(cache) {
             return cache.addAll([
                 './',
-                './css/style.css',
-                './js/build/script.min.js',
-                './js/build/vendor.min.js',
-                './css/fonts/roboto.woff',
-                './offline.html'
+                './css/main.css',
+                './script/app.js',
+                './script/places-search/placesSearchController.js',
+                './script/places-search/placesSearchFactory.js',
+                './script/places-search/placesSearchModule.js',
+                './script/places-search/placesSearchOptsFactory.js',
+                './script/places-search/placesSearchOptsFactory.js',
+                './script/shared/multiSelectService.js',
+                './index.html'
             ]).then(function() {
                 self.skipWaiting();
             });
@@ -51,7 +55,6 @@ self.addEventListener('install', function(e) {
                 './script/places-search/placesSearchOptsFactory.js',
                 './script/places-search/placesSearchOptsFactory.js',
                 './script/shared/multiSelectService.js',
-                // './css/fonts/roboto.woff',
                 './index.html'
             ]).then(function() {
                 self.skipWaiting();
