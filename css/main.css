@@ -449,6 +449,11 @@ a {
   color: #1c1e84;
 }
 
+img{
+  max-width:100%;
+  border:0;
+}
+
 article p, article li, article ol {
   margin-bottom: 1rem;
 }
@@ -574,64 +579,48 @@ body > header .title span {
   font-size: 1.4rem;
 }
 
-.carousel-region {
-  padding: 1rem 0;
-  background-color: #eee;
-  width: 100%;
+.carousel{
+  position:relative;
+  width:100%;
+}
+.carousel-wrap{
+  max-width:725px;
+  overflow:hidden;
+  margin:0 auto;
+}
+.carousel-item{
+  display:none;
+  position:relative;
+
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  -o-transition: -o-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.carousel-item.active{
+  display:block;
+  left:0;
+  right:0;
+}
+.carousel-item.active.left{
+  left:-100%;
+  right:auto;
+}
+.carousel-item.active.next-right{
+  right:-100%;
+  left:auto;
 }
 
-.carousel-container {
-  position: relative;
-  width: 520px;
-  height: 300px;
-  overflow: hidden;
-  padding: 0;
-  margin: 0 auto;
+.carousel-details{
+  position:absolute;
+  width:100%;
+  padding:1rem 2rem;
+  background-color:rgba(255,255,255,0.8);
+  bottom:0;
 }
-
-.carousel-container:before, .carousel-container:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  margin-top: -5px;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  z-index: 100;
-}
-
-.carousel-container:before {
-  left: 0;
-  border-right: 16px solid blue;
-}
-
-.carousel-container:before:hover {
-  border-right: 16px solid red;
-}
-
-.carousel-container:after {
-  right: 0;
-  border-left: 16px solid blue;
-}
-
-.carousel-container:after:hover {
-  border-right: 16px solid red;
-}
-
-.carousel-item {
-  display: inline-block;
-  position: relative;
-  padding: 0;
-  margin: 0;
-}
-
-.carousel-item img {
-  max-height: 300px;
-}
-
-.carousel-item article {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  padding: 0 2rem;
+.carousel-details h2{
+  margin:0;
 }

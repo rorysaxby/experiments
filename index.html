@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="libraries/angular.min.js"></script>
 		<link rel="manifest" href="./manifest.json">
 	</head>
@@ -15,6 +15,35 @@
 		</header>
 
 		<main>
+			<section class="carousel">
+				<div class="carousel-wrap">
+					<div class="carousel-item">
+						<div class="carousel-details">
+							<h2>Main title 1</h2>
+						</div>
+						<img src="img/photos/1.jpg">
+					</div>
+					<div class="carousel-item active next right">
+						<div class="carousel-details">
+							<h2>Main title 2</h2>
+						</div>
+						<img src="img/photos/2.jpg">
+					</div>
+					<div class="carousel-item">
+						<div class="carousel-details">
+							<h2>Main title 3</h2>
+						</div>
+						<img src="img/photos/3.jpg">
+					</div>
+					<div class="carousel-item">
+						<div class="carousel-details">
+							<h2>Main title 4</h2>
+						</div>
+						<img src="img/photos/4.jpg">
+					</div>
+				</div>
+			</section>
+
 			<section data-ng-controller="placesSearch as vm">
 				<div class="gutter">
 					<section class="places" data-ng-class="vm.placesOpts.display.shrink ? 'shrink' : ''">
@@ -37,6 +66,7 @@
 					</section>
 				</div>	
 			</section>
+
 		</main>
 			
 		<footer>
@@ -51,6 +81,8 @@
 		<script src="script/places-search/placesSearchController.js"></script>
 
 		<script src="script/shared/multiSelectService.js"></script>
+		<script src="script/carousel.js"></script>
+		<script src="script/main.js"></script>
 		<!-- <script src="script/components/carousel/carouselDirective.js"></script> -->
 
 		<!-- <script src="script/app/forms/formModule.js"></script>
