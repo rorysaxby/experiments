@@ -13,7 +13,7 @@
 	};*/
 
 	var mainBanner = new rtCarousel({
-		container: 'carousel',
+		container: 'carousel-wrap',
 		items: 'carousel-item',
 		activeClass: 'active',
 		nextClass:'next',
@@ -22,9 +22,8 @@
 		animation: 'scoll',
 		hoverPauseTime: 0,
 		timeDelay: 8,
-		activateItem: 1
+		activateItems: 1,
+		navControl: true
 	});
-
-	console.log(rtCarousel);
 
 })();

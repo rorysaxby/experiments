@@ -10,41 +10,39 @@
 		<link rel="manifest" href="./manifest.json">
 	</head>
 	<body>
-		<header>
+		<header class="site-header cf">
 			<div class="title"><span>ng</span>experiments</div>
 		</header>
-
-		<main>
-			<section class="carousel">
-				<div class="carousel-wrap">
-					<div class="carousel-item">
-						<div class="carousel-details">
-							<h2>Main title 1</h2>
-						</div>
-						<img src="/img/photos/1.jpg">
+		<section class="carousel cf">
+			<div class="carousel-wrap">
+				<div class="carousel-item active">
+					<div class="carousel-details">
+						<h2>Main title 1</h2>
 					</div>
-					<div class="carousel-item active next right">
-						<div class="carousel-details">
-							<h2>Main title 2</h2>
-						</div>
-						<img src="/img/photos/2.jpg">
-					</div>
-					<div class="carousel-item">
-						<div class="carousel-details">
-							<h2>Main title 3</h2>
-						</div>
-						<img src="/img/photos/3.jpg">
-					</div>
-					<div class="carousel-item">
-						<div class="carousel-details">
-							<h2>Main title 4</h2>
-						</div>
-						<img src="/img/photos/4.jpg">
-					</div>
+					<img src="img/photos/1.jpg">
 				</div>
-			</section>
+				<div class="carousel-item active next right">
+					<div class="carousel-details">
+						<h2>Main title 2</h2>
+					</div>
+					<img src="img/photos/2.jpg">
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-details">
+						<h2>Main title 3</h2>
+					</div>
+					<img src="img/photos/3.jpg">
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-details">
+						<h2>Main title 4</h2>
+					</div>
+					<img src="img/photos/4.jpg">
+				</div>
+			</div>
+		</section>
 
-			<section data-ng-controller="placesSearch as vm">
+			<!-- <section data-ng-controller="placesSearch as vm">
 				<div class="gutter">
 					<section class="places" data-ng-class="vm.placesOpts.display.shrink ? 'shrink' : ''">
 						<div class="filterbox">
@@ -65,10 +63,7 @@
 						</div>
 					</section>
 				</div>	
-			</section>
-
-		</main>
-			
+			</section> -->
 		<footer>
 		</footer>
 
