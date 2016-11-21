@@ -1,4 +1,4 @@
-// ****** rslib ******//
+// ****** rslib - tabs ******//
 // Title: tabs
 // Version: 1.0
 // Description: Provides a simple tab set up.
@@ -33,7 +33,8 @@
 //			<!------ markup/content ----->
 //		</div>
 // </section>
-
+(function(){
+	
 rslib.tabs = function(opts){
 	this.opts = {};
 	this.opts.viewsContainer = $(opts.viewsContainer);
@@ -97,3 +98,4 @@ rslib.tabs.prototype.init = function(){
 	};
 };
 
+})();
