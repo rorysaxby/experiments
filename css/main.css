@@ -600,6 +600,7 @@ body > header .title span {
   outline: 1px solid limegreen;
 }
 .carousel-wrap{
+  position: relative;
   max-width:725px;
   overflow:hidden;
   margin:0 auto;
@@ -607,7 +608,6 @@ body > header .title span {
 .carousel-item{
   display:none;
   position:relative;
-
   -webkit-transition: -webkit-transform .6s ease-in-out;
   -o-transition: -o-transform .6s ease-in-out;
   transition: transform .6s ease-in-out;
@@ -618,16 +618,29 @@ body > header .title span {
 }
 .carousel-item.active{
   display:block;
+  top:0;
   left:0;
   right:0;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 .carousel-item.active.left{
   left:-100%;
   right:auto;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
 }
 .carousel-item.active.right{
   right:-100%;
   left:auto;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.carousel-item.next{
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .carousel-details{
@@ -637,6 +650,40 @@ body > header .title span {
   background-color:rgba(255,255,255,0.8);
   bottom:0;
 }
+
 .carousel-details h2{
   margin:0;
+}
+
+/*--- Tab styling*/
+
+.proto-tabs .rsTabs button{
+  display:inline-block;
+  background-color:#dddddd;
+  color:#bbbbbb;
+  font-size:2rem;
+  padding:2rem;
+  border:2px solid black;
+  border-radius:10px 10px 0 0
+}
+
+.proto-tabs .rsTabs button.active{
+  background-color:#ffffff;
+  color:#000000;
+}
+
+.proto-tabs .rsTabViews{
+  display:inline-block;
+  width:100%;
+}
+.proto-tabs .view{
+  display:inline-block;
+  width:100%;
+  padding:5rem;
+  border:2px solid red;
+}
+.proto-tabs .view.hidden{
+  display:none;
+  height:0;
+  padding:0;
 }
