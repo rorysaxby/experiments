@@ -100,14 +100,15 @@
 		game.addSnowball = function(){
 			var snowball = document.createElement('div');
 			snowball.id = "ball" + game.countId;
-			game.countId ++
+			game.countId ++;
 			snowball.className = "snowball";
 			snowball.setAttribute('style', 'top: ' + game.player.offsetTop + 'px; left: ' + game.player.offsetLeft + 'px;');
 			game.view.append(snowball);
 			game.animateSnowball(snowball.id);
 		};
 
-		game.animateSnowball = function(){
+		game.animateSnowball = function(id){
+			var ball = $("#" + id);
 
 		};
 
