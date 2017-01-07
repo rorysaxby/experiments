@@ -28,7 +28,8 @@
 
 	$(function(){ 
 		var game = {
-			countId:1
+			countId:1,
+			ballAnims:{}
 		};
 
 		game.setup = function(){
@@ -109,7 +110,11 @@
 
 		game.animateSnowball = function(id){
 			var ball = $("#" + id);
-
+			game.ballAnims[id] = setInterval( function(ball) {
+				
+				console.log('test');
+			},100);
+			console.log(game);
 		};
 
 		game.checkSnowballPosition = function(){
