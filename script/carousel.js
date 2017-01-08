@@ -141,9 +141,6 @@ rtCarousel.prototype.pauseAnim = function(item){
 
 };
 
-rtCarousel.prototype.bindSwipe = function(){
-
-};
 
 // var rtCarousel = function(){
 

@@ -45,6 +45,8 @@
 		this.opts.activeTabClass = opts.activeTabClass;
 		this.opts.hiddenViewClass = opts.hiddenViewClass;
 		this.opts.startAt = (opts.startAt - 1) || 0;
+		// initialise carousel
+		this.init();
 	};
 
 	rslib.carousel.prototype.checkOpts = function(){

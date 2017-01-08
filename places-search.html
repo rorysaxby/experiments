@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html data-ng-app="app">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="libraries/angular.min.js"></script>
+		<link rel="manifest" href="./manifest.json">
+	</head>
+	<body>
+		<header class="site-header cf">
+			<a href="/" class="title"><span>ng</span>experiments</a>
+		</header>
+
+		<section data-ng-controller="placesSearch as vm">
+			<div class="gutter">
+				<section class="places" data-ng-class="vm.placesOpts.display.shrink ? 'shrink' : ''">
+					<div class="filterbox">
+						<div class="inline-row">
+							<label for="placesFilterSearch">Search</label>
+							<input id="FilterPlacesSearch" type="text" data-ng-model="vm.placesOpts.filters.search" name="placesFilterSearch">
+						</div>
+						<div class="inline-row">
+							<label for="placesFilterSarch">Order by</label>
+							<select id="FilterPlacesSearch" type="text" data-ng-model="vm.placesOpts.filters.order" data-ng-options="order.code as order.value for order in vm.placesOpts.filterProps.orderBy" name="placesFilterSarch"><option value="">Select</option></select>
+						</div>
+						<a href="" class="shrink-cta" data-ng-click="vm.placesOpts.display.shrink = !vm.placesOpts.display.shrink"><span data-ng-if="!vm.placesOpts.display.shrink">Shrink me</span><span data-ng-if="vm.placesOpts.display.shrink">Grow me</span></a>
+					</div>
+					<div class="block-container" data-ng-repeat="place in vm.places | filter:vm.searchFilter | orderBy: vm.placesOpts.filters.order as placesDisplay">
+						<div class="block" data-ng-class="place.active ? 'active' : ''" data-ng-click="vm.selectPlaces($event, place)">
+							<h6>{{place.name}}</h6>
+						</div>
+					</div>
+				</section>
+			</div>	
+		</section>
+		<footer>
+		</footer>
+
+		<script src="script/app.js"></script>
+
+		<script src="script/places-search/placesSearchModule.js"></script>
+		<script src="script/places-search/placesSearchServices.js"></script>
+		<script src="script/places-search/placesSearchFactory.js"></script>
+		<script src="script/places-search/placesSearchOptsFactory.js"></script>
+		<script src="script/places-search/placesSearchController.js"></script>
+
+		<script src="script/shared/multiSelectService.js"></script>
+
+		<!-- <script src="script/app/forms/formModule.js"></script>
+		<script src="script/app/forms/formController.js"></script> -->
+	</body>
+</html>

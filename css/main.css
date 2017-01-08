@@ -508,8 +508,14 @@ body > header .title span {
 }
 
 .site-header{
-  float:left;
   width:100%;
+}
+.wrap{          
+  max-width:800px;
+  margin:0 auto;
+}
+.gutter{
+  padding:0 10px;
 }
 
 /*components*/
@@ -593,54 +599,84 @@ body > header .title span {
   font-size: 1.4rem;
 }
 
+/*---------- Carousel ------------*/
+
 .carousel{
   position:relative;
-  float: left;
   width:100%;
-  outline: 1px solid limegreen;
+  max-height:400px;
+  overflow:hidden;
+  margin-bottom:20px;
 }
-.carousel-wrap{
+
+.carousel-view{
   position: relative;
   max-width:725px;
-  overflow:hidden;
   margin:0 auto;
+}
+.carousel-items-container{
+  white-space: nowrap;
+  width:300%;
+  margin-left:-100%;
 }
 .carousel-item{
   display:none;
-  position:relative;
-  -webkit-transition: -webkit-transform .6s ease-in-out;
-  -o-transition: -o-transform .6s ease-in-out;
-  transition: transform .6s ease-in-out;
+  top:0;
+  width:100%;
+  max-width:725px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 .carousel-item.active{
-  display:block;
-  top:0;
-  left:0;
-  right:0;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  display:inline-block;
+  -webkit-transform: translateX(100%,0,0);
+  transform: translate3d(100%,0,0);
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  -o-transition: -o-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
 }
 .carousel-item.active.left{
-  left:-100%;
-  right:auto;
   -webkit-transform: translate3d(-100%,0,0);
   transform: translate3d(-100%,0,0);
 }
+.carousel-item.active.next-left{
+  -webkit-transform: translate3d(-200%,0,0);
+  transform: translate3d(-200%,0,0);
+}
 .carousel-item.active.right{
-  right:-100%;
-  left:auto;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.carousel-item.active.next-right{
   -webkit-transform: translate3d(100%,0,0);
   transform: translate3d(100%,0,0);
 }
+.carousel-btn{
+  display:block;
+  position:absolute;
+  width:40px;
+  height:40px;
+  background-color:hotpink;
+  border:0;
+  z-index:2;
+}
+.carousel-buttons{
+  position:relative;
+  max-width:725px;
+  margin:0 auto;
+}
+.carousel-btn.left{
+  top:50%;
+  left:0;
+  margin-top:-20px;
+}
 
-.carousel-item.next{
-  position: absolute;
-  top: 0;
-  width: 100%;
+.carousel-btn.right{
+  top:50%;
+  right:0;
+  margin-top:-20px;
 }
 
 .carousel-details{
@@ -654,6 +690,15 @@ body > header .title span {
 .carousel-details h2{
   margin:0;
 }
+
+/*------------- blog -------------- */
+
+.blog{
+  display:block;
+  float:left;
+
+}
+
 
 /*--- Tab styling*/
 
