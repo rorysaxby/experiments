@@ -604,54 +604,51 @@ body > header .title span {
 .carousel{
   position:relative;
   width:100%;
-  max-height:400px;
-  overflow:hidden;
   margin-bottom:20px;
+  overflow: hidden;
 }
 
 .carousel-view{
-  position: relative;
+  position:relative;
   max-width:725px;
   margin:0 auto;
 }
 .carousel-items-container{
-  white-space: nowrap;
-  width:300%;
-  margin-left:-100%;
+
 }
 .carousel-item{
   display:none;
-  top:0;
   width:100%;
-  max-width:725px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
+  transition:all 0.5s ease-in;
 }
 .carousel-item.active{
-  display:inline-block;
-  -webkit-transform: translateX(100%,0,0);
-  transform: translate3d(100%,0,0);
-  -webkit-transition: -webkit-transform .6s ease-in-out;
-  -o-transition: -o-transform .6s ease-in-out;
-  transition: transform .6s ease-in-out;
+  display:block;
+}
+.carousel-item.right{
+  position:absolute;
+  top:0;
+  left:100%;
 }
 .carousel-item.active.left{
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
+  position:absolute;
+  top:0;
+  left:-100%;
 }
-.carousel-item.active.next-left{
-  -webkit-transform: translate3d(-200%,0,0);
-  transform: translate3d(-200%,0,0);
-}
-.carousel-item.active.right{
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+.carousel-item.next-left{
+  position:absolute;
+  top:0;
+  left:200%;
 }
 .carousel-item.active.next-right{
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
+  position:absolute;
+  top:0;
+  left:-200%;
+}
+.carousel-item.animate-left{
+  transform: translateX(-100%);
+}
+.carousel-item.animate-right{
+  transform: translateX(-100%);
 }
 .carousel-btn{
   display:block;
@@ -663,9 +660,6 @@ body > header .title span {
   z-index:2;
 }
 .carousel-buttons{
-  position:relative;
-  max-width:725px;
-  margin:0 auto;
 }
 .carousel-btn.left{
   top:50%;
