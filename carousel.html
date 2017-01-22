@@ -6,42 +6,51 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="libraries/angular.min.js"></script>
-		<link rel="manifest" href="./manifest.json">
 	</head>
 	<body>
 		<header class="site-header cf">
 			<a href="/" class="title"><span>ng</span>experiments</a>
 		</header>
-		<section class="carousel cf">
+		<section id="rsCarousel" class="carousel cf">
 			<div class="carousel-view">
-				<div class="carousel-items-container">
-					<div class="carousel-item active">
+				<ul>
+					<li class="active">
 						<div class="carousel-details">
 							<h2>Main title 1</h2>
 						</div>
 						<img src="img/photos/1.jpg">
-					</div><div class="carousel-item active right">
+					</li>
+					<li class="active right">
 						<div class="carousel-details">
 							<h2>Main title 2</h2>
 						</div>
-						<img src="img/photos/2.jpg">
-					</div><div class="carousel-item">
+						<img src="img/photos/2.jpg"></li>
+					<li>
 						<div class="carousel-details">
 							<h2>Main title 3</h2>
 						</div>
 						<img src="img/photos/3.jpg">
-					</div><div class="carousel-item active left">
+					</li>
+					<li class="active left">
 						<div class="carousel-details">
 							<h2>Main title 4</h2>
 						</div>
 						<img src="img/photos/4.jpg">
-					</div>
-					<button type="button" class="carousel-btn left">
-					</button>
-					<button type="button" class="carousel-btn right">
-					</button>
-				</div>
+					</li>
+				</ul>
+				<button type="button" class="carousel-btn left">
+				</button>
+				<button type="button" class="carousel-btn right">
+				</button>
+				<!-- <div class="carousel-item active">
+					
+				</div><div class="carousel-item active right">
+					
+				</div><div class="carousel-item">
+					
+				</div><div class="carousel-item active left">
+					
+				</div> -->
 				
 			</div>
 

@@ -616,38 +616,43 @@ body > header .title span {
 .carousel-items-container{
 
 }
-.carousel-item{
+.carousel-view li{
   display:none;
   width:100%;
   transition:all 0.5s ease-in;
 }
-.carousel-item.active{
+.carousel-view ul,
+.carousel-view li{
+  padding:0;
+  margin:0;
+}
+.carousel-view li.active{
   display:block;
 }
-.carousel-item.right{
+.carousel-view li.right{
   position:absolute;
   top:0;
   left:100%;
 }
-.carousel-item.active.left{
+.carousel-view li.active.left{
   position:absolute;
   top:0;
   left:-100%;
 }
-.carousel-item.next-left{
+.carousel-view li.next-left{
   position:absolute;
   top:0;
   left:200%;
 }
-.carousel-item.active.next-right{
+.carousel-view li.active.next-right{
   position:absolute;
   top:0;
   left:-200%;
 }
-.carousel-item.animate-left{
+.carousel-view li.animate-left{
   transform: translateX(-100%);
 }
-.carousel-item.animate-right{
+.carousel-view li.animate-right{
   transform: translateX(-100%);
 }
 .carousel-btn{
