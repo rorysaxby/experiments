@@ -768,3 +768,30 @@ body > header .title span {
   border-radius:10px;
   border:1px solid #000;
 }
+
+/*---- Carousel two ----*/
+
+.carousel-two{
+  position:relative;
+  height:100%;
+  max-width:750px;
+  margin:50px auto;
+  overflow:hidden;
+}
+.view-control ul,
+.view-control li{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+.view-control ul{
+  transition:transform 0.6s;
+}
+
+.view-control li{
+  position:relative;
+  float:left;
+  height:100%;
+  max-height:300px;
+}

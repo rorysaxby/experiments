@@ -1,7 +1,7 @@
 (function(){
 	'use strict';
 
-	var exampleCarousel = new rslib.carousel({
+	/*var exampleCarousel = new rslib.carousel({
 		containerId: 'rsCarousel',
 		viewTarget: 'li',
 		activeClass: 'active',
@@ -10,8 +10,15 @@
 		startAt: 1,
 		autoRotate: true,
 		rotateTime: 3000
-	});
+	});*/
 
+	var multiCarousel = new rslib.multiCarousel({
+		containerId: '#rsCarouselTwo',
+		listViewClass: '.view-control',
+		displayNumber:3,
+		nextCtrl: '.carousel-btn.right',
+		prevCtrl: '.carousel-btn.left'
+	});
 
 	/*var profNotif = new rtCarousel();
 
