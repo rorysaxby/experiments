@@ -1,0 +1,55 @@
+/*
+    Settings: COLORS
+
+    The color palette is where colors across the site are set.
+    Here are the rules:
+        -   Only reference specific hexadecimal colors within the Color Palette area of this partial.
+        -   Color names are based on hexadecimal color here: http://chir.ag/projects/name-that-color/
+        -   These variables will be used in various places
+*/
+
+/*
+    Color Palette
+    The base set of colors which are used.
+*/
+
+/*----- Primary Colors -----*/
+
+$color-blue: #16539a;
+
+/*----- Secondary Colors -----*/
+
+$color-red: #e31d1a;
+$color-darkest-blue:#152b4f;
+$color-light-blue: #659fd5;
+$color-lightest-blue:#ccd6d6;
+$color-lightester-blue:#f0f5f5;
+$color-off-blue:#4a54a1;
+$color-off-blue-light:#5066a5;
+$color-orange: #f58022;
+$color-light-orange: #fbb255;
+$color-yellow:#ffd133;
+$color-lighter-yellow: #f7c44f;
+$color-mint-green:#2bad6e;
+
+/*----- Base Colors -----*/
+
+$color-dark-purple:     #120f1a;
+$color-purple:          #382266;
+$color-medium-purple:   #4b4659;
+$color-light-purple:    #736494;
+$color-lightest-purple: #e1dfe6;
+
+$color-pink:            #ea6167;
+$color-yellow:          #eadb61;
+$color-green:           #19ac4b;
+
+$color-light-grey:      #dddddd;
+$color-lighter-grey:    #ededed;
+
+$color-black:           #000000;
+$color-grey:            #777777;
+$color-white:           #ffffff;
+
+
+

@@ -1,4 +1,4 @@
-.carousel-region{
+/*.carousel-region{
 	padding:1rem 0;
 	background-color:#eee;
 	width:100%;
@@ -55,4 +55,120 @@
 		width:100%;
 		padding:0 2rem;
 	}
+}*/
+
+.carousel{
+  position:relative;
+  width:100%;
+  margin-bottom:20px;
+  overflow: hidden;
+}
+
+.carousel-view{
+  position:relative;
+  max-width:725px;
+  margin:0 auto;
+}
+.carousel-items-container{
+
+}
+.carousel-view li{
+  display:none;
+  width:100%;
+  transition:all 0.5s ease-in;
+}
+.carousel-view ul,
+.carousel-view li{
+  padding:0;
+  margin:0;
+}
+.carousel-view li.active{
+  display:block;
+}
+.carousel-view li.right{
+  position:absolute;
+  top:0;
+  left:100%;
+}
+.carousel-view li.active.left{
+  position:absolute;
+  top:0;
+  left:-100%;
+}
+.carousel-view li.next-left{
+  position:absolute;
+  top:0;
+  left:200%;
+}
+.carousel-view li.active.next-right{
+  position:absolute;
+  top:0;
+  left:-200%;
+}
+.carousel-view li.animate-left{
+  transform: translateX(-100%);
+}
+.carousel-view li.animate-right{
+  transform: translateX(-100%);
+}
+.carousel-btn{
+  display:block;
+  position:absolute;
+  width:40px;
+  height:40px;
+  background-color:hotpink;
+  border:0;
+  z-index:2;
+}
+.carousel-buttons{
+}
+.carousel-btn.left{
+  top:50%;
+  left:0;
+  margin-top:-20px;
+}
+
+.carousel-btn.right{
+  top:50%;
+  right:0;
+  margin-top:-20px;
+}
+
+.carousel-details{
+  position:absolute;
+  width:100%;
+  padding:1rem 2rem;
+  background-color:rgba(255,255,255,0.8);
+  bottom:0;
+}
+
+.carousel-details h2{
+  margin:0;
+}
+
+/*---- Carousel two ----*/
+
+.carousel-two{
+  position:relative;
+  height:100%;
+  max-width:750px;
+  margin:50px auto;
+  overflow:hidden;
+}
+.view-control ul,
+.view-control li{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+.view-control ul{
+  transition:transform 0.6s;
+}
+
+.view-control li{
+  position:relative;
+  float:left;
+  height:100%;
+  max-height:300px;
 }

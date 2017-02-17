@@ -1,0 +1,33 @@
+/*
+    Settings: GLOBAL
+
+    These are the base settings used globally across the site.
+
+*/
+
+/*
+    Settings: GLOBAL
+
+    These are the base settings used globally across the site.
+
+*/
+
+/*
+    FONTS Setup
+*/
+$font-primary: 'Fira Sans', sans-serif;
+$font-icons: 'icomoon';
+
+/* FONTS Elements */
+$font-headings:$font-primary;
+
+/*  Sizing and Spacing */
+$base-font-size:    1.8rem;
+$base-line-height:  24px;
+
+$base-radius:       0px;
+$base-gutter:       2.0rem;
+$base-spacing-unit: $base-line-height;
+
+
+/* SUSY - http://susydocs.oddbird.net/en/latest/ */

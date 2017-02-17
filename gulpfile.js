@@ -18,7 +18,7 @@ var gulp = require('gulp'),
 *************************************************/
 
 var scssFiles = 'app/**/*.scss',
-	cssDest = 'css/',
+	cssDest = 'dist/',
     cssFile = 'styles.css',
 	jsAll = 'scripts.js',
 	jsDest = 'dist/',

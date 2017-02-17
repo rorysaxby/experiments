@@ -1,0 +1,33 @@
+.game-container{
+  display:inline-block;
+  width:100%;
+  padding:2rem;
+}
+
+.game-view{
+    position:relative;
+    width:800px;
+    height:500px;
+    border:1px solid #aaa;
+    margin:0 auto;
+}
+
+.sleigh{
+  position:absolute;
+  left:50px;
+  top:250px;
+  width:60px;
+  height:30px;
+  background-color:red;
+  transition: all 0.3s;
+  border-radius:3px;
+}
+
+.snowball{
+  position:absolute;
+  background-color:#ffffff;
+  width:10px;
+  height:10px;
+  border-radius:10px;
+  border:1px solid #000;
+}

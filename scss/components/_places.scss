@@ -73,3 +73,78 @@
 		}
 	}
 }
+
+
+
+.places {
+  padding: 1rem;
+}
+
+.places a.shrink-cta {
+  position: relative;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.places a.shrink-cta:before {
+  content: "-";
+  font-size: 2.3rem;
+  display: inline-block;
+  padding-right: 0.5rem;
+  text-decoration: underline;
+  text-decoration: none;
+}
+
+.places .block-container {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1rem;
+  transition: 0.2s all linear;
+}
+
+.places .block-container:hover {
+  transform: scale(1.15, 1.15);
+}
+
+.places .block {
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  background-color: #ddd;
+  padding: 1rem 0.5rem;
+  border: 4px solid #eee;
+  transform: rotate(0deg);
+  transition: width 1s, border 0.3s, padding 1s, color 1s;
+}
+
+.places .block h6 {
+  font-size: 1.7rem;
+  color: #666;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+
+.places .block.active {
+  border: 4px solid #d31f22;
+}
+
+.places .block.active h6 {
+  color: #d31f22;
+}
+
+.places.shrink a.shrink-cta:before {
+  content: "+";
+}
+
+.places.shrink .block {
+  width: 112px;
+  padding: 0.6rem 0.5rem 0.6rem;
+}
+
+.places.shrink .block h6 {
+  font-size: 1.4rem;
+}
