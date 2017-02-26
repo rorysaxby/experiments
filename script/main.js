@@ -15,7 +15,7 @@
 	var multiCarousel = new rslib.multiCarousel({
 		containerId: '#rsCarouselTwo',
 		listViewClass: '.view-control',
-		displayNumber:3,
+		displayNumber:2,
 		nextCtrl: '.carousel-btn.right',
 		prevCtrl: '.carousel-btn.left'
 	});
