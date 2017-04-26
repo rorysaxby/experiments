@@ -15,9 +15,16 @@
 	var multiCarousel = new rslib.multiCarousel({
 		containerId: '#rsCarouselTwo',
 		listViewClass: '.view-control',
-		displayNumber:2,
+		displayNumber:1,
 		nextCtrl: '.carousel-btn.right',
 		prevCtrl: '.carousel-btn.left'
+	});
+
+	var carouselSwipe = new rslib.swipe({
+		target: '#swipeTarget',
+		style: 'left',
+		leftFn: multiCarousel.setPrev,
+		rightFn: multiCarousel.setNext
 	});
 
 	/*var profNotif = new rtCarousel();

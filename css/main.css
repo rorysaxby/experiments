@@ -786,6 +786,7 @@ body > header .title span {
 }
 
 .view-control ul{
+  height:300px;
   transition:transform 0.6s;
 }
 
