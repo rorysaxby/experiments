@@ -20,12 +20,21 @@
 		prevCtrl: '.carousel-btn.left'
 	});
 
+	multiCarousel.touchCheck = function(value, direction){
+		console.log(direction + ": " + value);
+	};
+
+	multiCarousel.touchEndCheck = function(value, direction){
+		console.log('End');
+	};
+
 	var carouselSwipe = new rslib.swipe({
-		target: '#swipeTarget',
-		style: 'left',
-		leftFn: multiCarousel.setPrev,
-		rightFn: multiCarousel.setNext
+		targetClass: 'swipe-view',
+		touchActiveFn: multiCarousel.touchCheck,
+		touchEndFn: multiCarousel.touchEndCheck
 	});
+
+	
 
 	/*var profNotif = new rtCarousel();
 
