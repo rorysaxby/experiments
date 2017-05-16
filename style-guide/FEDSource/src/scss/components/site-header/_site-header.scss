@@ -1,0 +1,18 @@
+﻿.outer-wrapper-header {
+    background-color: $color-light-grey;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        padding: 20px 0;
+        width: 100px;
+    }
+}
+
+.header-search {
+    width: 20%;
+}

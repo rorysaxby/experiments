@@ -1,0 +1,74 @@
+﻿/*
+* Built by Rocktime Ltd - @rocktime
+* 
+* Normalize.css is a project by Nicolas Gallagher - @necolas
+* ITCSS architecture by Harry Roberts - @csswizardry
+* BEM should be used to name classes - http://getbem.com/
+*
+* * * House Rules * * * * *
+*
+*   - If in doubt, create a component.
+*   - Only use classes.
+*   - Nest only to a maximum of 3 layers.
+*   - Only use '!important' within the Trump Layer.
+*
+* * * * * * * * * * * * * *
+*/
+
+/*#region SETTINGS */
+// Variables and base site settings used globally only.
+@import "scss/settings/global";
+@import "scss/settings/colors";
+@import "scss/settings/extendables";
+/*#endregion*/
+
+/*#region TOOLS */
+// Mixins and functions which are used globally.
+@import "scss/tools/mixins";
+/*#endregion*/
+
+/*#region GENERIC */
+// General base styling. Not normally changed.
+@import "scss/generic/normalize";
+@import "scss/generic/box-sizing";
+@import "scss/generic/reset";
+/*#endregion*/
+
+/*#region ELEMENTS */
+// Bare unclassed elements. No classes used.
+@import "scss/elements/page";
+@import "scss/elements/headings";
+@import "scss/elements/typography";
+@import "scss/elements/images";
+/*#endregion*/
+
+/*#region OBJECTS */
+// Non-cosmetic design patterns. Classes used.
+/*@import "scss/objects/wrappers";*/
+@import "scss/objects/grid";
+@import "scss/objects/layout";
+@import "scss/objects/media";
+@import "scss/objects/shared";
+@import "scss/objects/icons";
+/*#endregion*/
+
+/*#region COMPONENTS */
+// Pieces of user interface. Cosmetic design patterns.
+@import "scss/components/site-content/site-content";
+@import "scss/components/site-header/site-header";
+@import "scss/components/site-footer/site-footer";
+@import "scss/components/site-navigation/site-navigation";
+@import "scss/components/buttons/buttons";
+@import "scss/components/forms/form-fields";
+@import "scss/components/forms/telerik-controls";
+@import "scss/components/forms/error-messages";
+@import "scss/components/colorbox/colorbox";
+/*#endregion*/
+
+/*#region TRUMPS */
+// Overrides and heavy-handed styling.
+@import "scss/trumps/links";
+@import "scss/trumps/widths";
+@import "scss/trumps/print";
+@import "scss/trumps/quick-fix";
+/*#endregion*/

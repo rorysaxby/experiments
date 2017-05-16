@@ -1,0 +1,32 @@
+﻿.site-nav {
+    width: 100%;
+}
+
+.site-nav__top-menu {
+    display: flex;
+    margin: 0;
+
+    li {
+        flex: 1 1 auto;
+        position: relative;
+
+        &:hover .site-nav__sub-menu {
+            display: block;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background-color: $color-blue;
+        color: $color-white;
+    }
+}
+
+.site-nav__sub-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+}

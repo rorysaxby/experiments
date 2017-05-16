@@ -1,0 +1,31 @@
+.error input[type=text],
+.error input[type=email],
+.error input[type=number],
+.error input[type=password],
+.error input[type=search],
+.error input[type=url],
+.error input[type=tel],
+.error select,
+.error textarea {
+    border-bottom-color: $color-red;
+}
+
+.error-summary {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 1px solid $color-red;
+    color: $color-red;
+}
+
+.error-summary-title,
+.error-summary-list a {
+    color: $color-red;
+}
+
+.error-notice {
+    color: $color-red;
+    display: inline-block;
+    margin: 0.25em 0;
+}

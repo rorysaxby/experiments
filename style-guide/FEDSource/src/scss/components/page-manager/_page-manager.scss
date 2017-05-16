@@ -1,0 +1,22 @@
+﻿.pm-content {
+    > ul,
+    > ol {
+        margin-bottom: 1.5rem;
+    }
+
+    li {
+        margin-left: 2rem;
+
+        &:before {
+            content: "";
+            background-color: $color-black;
+            display: inline-block;
+            margin-right: 9px;
+            position: relative;
+            margin-left: -20px;
+            top: -1px;
+            width: 10px;
+            height: 10px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.outer-wrapper {
+    @extend %cf;
+    width: 100%;
+}
+
+.outer-wrapper-footer {
+    display: table-row;
+    height: 1px;
+}
+
+.outer-wrapper-content {
+    @extend %cf;
+    position: relative;
+}
+
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.inner-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.outer-page {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: table-row;
+}
+
+.outer-page:after {
+    content: "";
+    display: block;
+}

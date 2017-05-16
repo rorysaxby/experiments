@@ -1,0 +1,40 @@
+// For IE/Edge's benefit the use of CSS grid properties has been limited to the basics and height has to be used due to min-height bug
+.outer-page {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100%;
+}
+
+.outer-wrapper-header {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 1;
+}
+
+.outer-wrapper-menu {
+    grid-column: 1 / span 5;
+    grid-row: 2 / span 1;
+}
+
+.outer-wrapper-content {
+    grid-column: 2 / span 4;
+    grid-row: 3 / span 1;
+}
+
+.outer-wrapper-content--full {
+    grid-column: 1 / span 5;
+}
+
+.outer-wrapper-aside {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.outer-wrapper-footer {
+    grid-column: 1 / span 5;
+    grid-row: 4 / span 1;
+}
+
+.inner-wrapper {
+    padding: $base-gutter $base-gutter*2;
+}

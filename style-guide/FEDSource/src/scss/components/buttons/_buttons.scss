@@ -1,0 +1,31 @@
+﻿.button,
+input[type=button],
+input[type=submit] {
+    @extend %button;
+}
+
+.button--primary {
+    background-color: $color-yellow;
+
+    &:hover {
+        background-color: $color-orange;
+    }
+}
+
+.button--secondary {
+    background-color: $color-orange;
+
+    &:hover {
+        background-color: $color-yellow;
+    }
+}
+
+.button--small {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.button--large {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+}

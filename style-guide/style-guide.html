@@ -1,0 +1,230 @@
+<style>
+    /* Styles only used for style guide (doesn't make sense to have these in the main scss) */
+    .styleguide-heading {
+        border-bottom: 1px solid #ccc;
+        margin-top: 1em;
+        padding: 0.3em 0;
+    }
+    h2.styleguide-heading {
+        border-top: 1px solid #ccc;
+        margin-top: 2em;
+    }
+    .color-palette {
+        display: inline-block;
+        margin: 10px;
+        width: 150px;
+        text-align: center;
+    }
+    .color-palette span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        height: 80px;
+        font-size: 0.875em;
+    }
+    .color-palette .light {
+        color: #fff;
+    }
+    .icon {
+        margin: 10px 5px;
+    }
+</style>
+<nav id="menu" class="site-nav">
+    <ul class="site-nav__top-menu">
+        <li>
+            <a href="#settings">Settings</a>
+            <ul class="site-nav__sub-menu">
+                <li><a href="#section-colours">Colours</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#elements">Elements</a>
+            <ul class="site-nav__sub-menu">
+                <li><a href="#section-headings">Headings</a></li>
+                <li><a href="#section-typography">Typography</a></li>
+            </ul>
+        </li>
+        <li><a href="#objects">Objects</a>
+            <ul class="site-nav__sub-menu">
+                <li><a href="#section-icons">Icons</a></li>
+                <li><a href="#section-layout">3 col pods (example layout)</a></li>
+            </ul>
+        </li>
+        <li><a href="#components">Components</a>
+            <ul class="site-nav__sub-menu">
+                <li><a href="#section-buttons">Buttons</a></li>
+                <li><a href="#section-forms">Forms</a></li>
+            </ul>
+        </li>
+        <li><a href="#trumps">Trumps</a></li>
+    </ul>
+</nav>
+
+
+<div class="outer-wrapper-content outer-wrapper-content--full">
+    <main id="content" class="main-content inner-wrapper" role="main">
+        <h1>The Style Guide</h1>
+        <p>This style guide is designed to contain all elements of the website being developed, it has been structured to contain all of the global common elements at the top with the more specific components further down. It is wrapped within the site's common header, footer and navigation sections. From this page and the other layouts created all pages on the website should be able to be constructed.</p>
+        <p><em>NB. When initially created, this style guide is classified as unstyled.</em></p>
+        
+        <%--Settings--%>
+        <h2 id="settings" class="styleguide-heading">Settings</h2>
+
+        <h4 id="section-colours" class="styleguide-heading">Colours</h4>
+        <div class="color-palette">
+            <span style="background-color: #000000"><em class="light">#000000<br />$color-black</em></span>
+            Black
+        </div>
+        <div class="color-palette">
+            <span style="background-color: #ffffff"><em>#ffffff<br />$color-white</em></span>
+            White
+        </div>
+        <div class="color-palette">
+            <span style="background-color: #777777"><em>#777777<br />$color-grey</em></span>
+            Grey
+        </div>
+        <div class="color-palette">
+            <span style="background-color: #cccccc"><em>#cccccc<br />$color-light-grey</em></span>
+            Light Grey
+        </div>
+        <div class="color-palette">
+            <span style="background-color: #ffff00"><em>#ffff00<br />$color-yellow</em></span>
+            Yellow
+        </div>
+        <div class="color-palette">
+            <span style="background-color: #ff9900"><em>#ff9900<br />$color-orange</em></span>
+            Orange
+        </div>
+        <div class="color-palette">
+            <span style="background-color: #ff0000"><em>#ff0000<br />$color-red</em></span>
+            Red
+        </div>
+        <div class="color-palette">
+            <span style="background-color: #0000ff"><em class="light">#0000ff<br />$color-blue</em></span>
+            Blue
+        </div>
+
+
+        <%--Elements--%>
+        <h2 id="elements" class="styleguide-heading">Elements</h2>
+
+        <h4 id="section-headings" class="styleguide-heading">Headings</h4>
+        <h1>Headline 1</h1>
+        <h2>Headline 2</h2>
+        <h3>Headline 3</h3>
+        <h4>Headline 4</h4>
+        <h5>Headline 5</h5>
+        <h6>Headline 6</h6>
+
+        <h4 id="section-typography" class="styleguide-heading">Typography</h4>
+        <p>Standard body text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales ex mollis laoreet ullamcorper. Pellentesque convallis libero turpis.</p>
+        <p><strong>Bold</strong> <em>Italic</em> <a href="#">Hyperlink</a></p>
+        <ul>
+            <li>Unordered list</li>
+            <li>Unordered list with nesting
+                <ul>
+                    <li>Unordered list</li>
+                    <li>Unordered list</li>
+                </ul>
+            </li>
+        </ul>
+        <ol>
+            <li>Ordered list</li>
+            <li>Ordered list with nesting
+                <ol>
+                    <li>Ordered list</li>
+                    <li>Ordered list</li>
+                </ol>
+            </li>
+        </ol>
+        <blockquote>
+            <p>Quote text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <footer>
+                <cite>Cite Source (<a href="http://google.com">can be hyperlinked</a>)</cite>
+            </footer>
+        </blockquote>
+
+        <%--Objects--%>
+        <h2 id="objects" class="styleguide-heading">Objects</h2>
+
+        <h4 id="section-icons" class="styleguide-heading">Icons</h4>
+        <svg class="icon icon--close">
+			<use xlink:href="/images/icons/icon-sprite.svg#close"></use>
+		</svg>
+        <svg class="icon icon--location">
+			<use xlink:href="/images/icons/icon-sprite.svg#location"></use>
+		</svg>
+        <svg class="icon icon--user">
+			<use xlink:href="/images/icons/icon-sprite.svg#user"></use>
+		</svg>
+
+        <h4 id="section-layout" class="styleguide-heading">3 col pods (example layout)</h4>
+        <div class="columns">
+            <article class="pod pod--third-width">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales ex mollis laoreet ullamcorper. Pellentesque convallis libero turpis.</p>
+            </article>
+            <article class="pod pod--third-width">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales ex mollis laoreet ullamcorper. Pellentesque convallis libero turpis.</p>
+            </article>
+            <article class="pod pod--third-width">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales ex mollis laoreet ullamcorper. Pellentesque convallis libero turpis.</p>
+            </article>
+        </div>
+        
+        <%--Components--%>
+        <h2 id="components" class="styleguide-heading">Components</h2>
+
+        <h4 id="section-buttons" class="styleguide-heading">Buttons</h4>
+        <a href="#" class="button">Standard button</a>
+        <a href="#" class="button button--primary">Primary button</a>
+        <a href="#" class="button button--secondary">Secondary button</a>
+        <a href="#" class="button button--small">Small button</a>
+        <a href="#" class="button button--large">Large button</a>
+
+        <h4 id="section-forms" class="styleguide-heading">Forms</h4>
+        <div class="third-width">
+            <div class="error-summary">
+                <h6 class="error-summary-title">Form Errors</h6>
+                <ul class="error-summary-list">
+                    <li><a href="#TextBox">Please enter something</a></li>
+                </ul>
+            </div>
+            <div class="form-field">
+                <asp:Label ID="txtTextBox" runat="server" AssociatedControlID="TextBox">Text box</asp:Label>
+                <asp:TextBox ID="TextBox" runat="server" placeholder="Enter something"></asp:TextBox>
+                <span class="error-notice">Please enter something</span>
+            </div>
+            <div class="form-field">
+                <asp:Label ID="txtTextarea" runat="server" AssociatedControlID="Textarea">Textarea</asp:Label>
+                <asp:TextBox ID="Textarea" runat="server" TextMode="MultiLine"></asp:TextBox>
+            </div>
+            <div class="form-field">
+                <asp:Label ID="txtDropdown" runat="server" AssociatedControlID="Textarea">Dropdown</asp:Label>
+                <telerik:RadDropDownList ID="Dropdown" runat="server" EnableEmbeddedSkins="false" Skin="rt" CssClass="rad-dropdown" Width="100%" EnableEmbeddedBaseStylesheet="False">
+                    <Items>
+                        <telerik:DropDownListItem Text="Option 1" />
+                        <telerik:DropDownListItem Text="Option 2" />
+                        <telerik:DropDownListItem Text="Option 3" />
+                    </Items>
+                </telerik:RadDropDownList>
+            </div>
+            <div class="form-field">
+                <asp:CheckBox ID="CheckBox" runat="server" />
+                <asp:Label ID="txtCheckBox" runat="server" AssociatedControlID="CheckBox">Checkbox</asp:Label>
+            </div>
+            <div class="form-field">
+                <asp:RadioButtonList ID="RadioButtonList" runat="server" RepeatLayout="Flow" RepeatDirection="Horizontal">
+                    <asp:ListItem Value="1">Option 1</asp:ListItem>
+                    <asp:ListItem Value="2">Option 2</asp:ListItem>
+                </asp:RadioButtonList>
+            </div>
+        </div>
+
+        <%--Trumps--%>
+        <h2 id="trumps" class="styleguide-heading">Trumps</h2>
+        <a href="#" class="u-link-bare">Link without underline</a>
+
+    </main>
+</div>

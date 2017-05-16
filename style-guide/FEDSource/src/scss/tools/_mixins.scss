@@ -1,0 +1,51 @@
+﻿/*
+    Tools: MIXINS
+
+    SCSS mixins. It is good practice to show how each mixin should be called and the CSS it will output.
+*/
+
+
+/*
+Max-width media query
+
+div {
+	@include max(768px) {
+		display: none;
+	}
+}
+
+Output:
+@media (max-width: 768px) {
+	div {
+		display: none;
+	}
+}
+*/
+@mixin max($maxwidth: $width) {
+    @media (max-width: $maxwidth) {
+        @content
+    }
+}
+
+
+/*
+Min-width media query
+
+div {
+	@include min(768px) {
+		display: block;
+	}
+}
+
+Output:
+@media (min-width: 768px) {
+	div {
+		display: block;
+	}
+}
+*/
+@mixin min($minwidth: $width) {
+    @media (min-width: $minwidth) {
+        @content
+    }
+}

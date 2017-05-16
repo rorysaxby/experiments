@@ -1,0 +1,58 @@
+ul, ol, dl, dd,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre {
+    margin-bottom: $base-spacing-unit;
+}
+
+p {
+    font-size: $base-font-size;
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+a {
+    color: $color-blue;
+    text-decoration: underline;
+
+    &:hover,
+    &:before,
+    &:after {
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: $color-black;
+    }
+}
+
+ul, ol {
+    list-style: none;
+}
+
+blockquote {
+    border-left: 5px solid $color-light-grey;
+    padding: 1rem;
+
+    p {
+        margin: 0;
+
+        &:before {
+            content: open-quote;
+        }
+    }
+
+    cite {
+        font-style: italic;
+    }
+}
+
+time {
+    display: block;
+    margin-bottom: 1.5rem;
+}

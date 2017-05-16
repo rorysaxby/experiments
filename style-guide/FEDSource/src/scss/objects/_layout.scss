@@ -1,0 +1,49 @@
+.cf {
+    @extend %cf;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+img.left {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+img.right {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.third-width {
+    width: 33.3333333333%;
+}
+
+.quarter-width {
+    width: 25%;
+}
+
+.pod {
+    background-color: $color-light-grey;
+    margin: 15px 0;
+    padding: 20px;
+}
+
+.pod--third-width {
+    width: calc(33.3333333333% - 10px);
+}

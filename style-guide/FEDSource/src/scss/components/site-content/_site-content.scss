@@ -1,0 +1,23 @@
+﻿.main-content {
+    ul {
+        list-style: disc;
+        margin-left: 1.5em;
+
+        ul {
+            list-style: circle;
+        }
+    }
+
+    ol {
+        counter-reset: item;
+        
+        li:before {
+            content: counters(item, ".") ". ";
+            counter-increment: item;
+        }
+
+        ol {
+            margin-left: 1.5em;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.icon {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+
+.icon--location {
+    fill: $color-red;
+}
+
+.icon--user {
+    fill: $color-orange;
+}

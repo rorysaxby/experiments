@@ -1,0 +1,21 @@
+/*
+    Settings: GLOBAL
+
+    These are the base settings used globally across the site.
+*/
+
+// FONTS Setup
+$font-primary: Arial, Helvetica, sans-serif;
+$font-secondary: Arial, Helvetica, sans-serif;
+
+// FONTS Elements
+$font-headings: $font-secondary;
+
+// Sizing and Spacing
+$base-font-size: 1.6rem;
+$base-line-height: 1.5;
+
+$base-radius: 3px;
+$base-gutter: 1rem;
+
+$base-spacing-unit: 1rem;

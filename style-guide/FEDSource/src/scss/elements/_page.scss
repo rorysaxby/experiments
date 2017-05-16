@@ -1,0 +1,16 @@
+html {
+    font-size: 62.5%; // 1.0rem === 10px
+    height: 100%;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    color: $color-black;
+    font: #{$base-font-size}/#{$base-line-height} $font-primary;
+
+    > form {
+        height: 100%;
+    }
+}

@@ -1,0 +1,54 @@
+// Dropdowns
+.RadDropDownList_rt {
+    .rddlInner {
+        position: relative;
+        padding-right: 30px;
+    }
+
+    .rddlFakeInput {
+        display: block;
+        overflow: hidden;
+    }
+
+    .rddlIcon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        margin-top: -4px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 6px 0 6px;
+        border-color: #000000 transparent transparent transparent
+    }
+}
+
+.rddlSlide {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    z-index: 7000;
+}
+
+.rddlPopup {
+    background: $color-white;
+    border-right: 1px solid $color-grey;
+    border-bottom: 1px solid $color-grey;
+    border-left: 1px solid $color-grey;
+    position: relative;
+
+    .rddlList {
+        position: relative;
+        margin: 0;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .rddlItem {
+        padding: 5px 10px;
+    }
+
+    .rddlItemHovered {
+        background-color: $color-light-grey;
+    }
+}
