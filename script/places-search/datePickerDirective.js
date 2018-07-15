@@ -4,7 +4,7 @@
 		** @description date picker directive, using jquery datepicker ui
 	*/
 
-	angular.module('datepicker.directive', []);
+	angular.module('datepicker.directive', [])
 		.directive('datepicker', datepicker);
 
 	function datepicker (){
