@@ -28,6 +28,7 @@
 						</div>
 						<a href="" class="shrink-cta" data-ng-click="vm.placesOpts.display.shrink = !vm.placesOpts.display.shrink"><span data-ng-if="!vm.placesOpts.display.shrink">Shrink me</span><span data-ng-if="vm.placesOpts.display.shrink">Grow me</span></a>
 					</div>
+					<h3>Use keys Ctrl and Shift to select multiple places like selecting files in Windows</h3>
 					<div class="block-container" data-ng-repeat="place in vm.places | filter:vm.searchFilter | orderBy: vm.placesOpts.filters.order as placesDisplay">
 						<div class="block" data-ng-class="place.active ? 'active' : ''" data-ng-click="vm.selectPlaces($event, place)">
 							<h6>{{place.name}}</h6>
